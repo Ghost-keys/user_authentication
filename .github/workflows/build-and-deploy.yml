@@ -38,7 +38,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: user_authentication
-          file: User_Authentication/Dockerfile
+          file: user_authentication/Dockerfile
           push: false
           load: true
           tags: |
