@@ -61,8 +61,8 @@ jobs:
         if: github.event_name != 'pull_request' && success()
         uses: docker/build-push-action@v5
         with:
-          context: user_authentication
-          file: user_authentication/Dockerfile
+          context: .
+          file: Dockerfile
           push: true
           tags: |
             ${{ env.DOCKER_IMAGE }}:latest
