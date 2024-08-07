@@ -28,11 +28,11 @@ public class User implements UserDetails {
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Integer id;
 
-    @Column(nullable = false)
-    private String name;
-
-    @Column(nullable = false)
-    private String surname;
+//    @Column(nullable = false)
+//    private String name;
+//
+//    @Column(nullable = false)
+//    private String surname;
 
     @Size(min = 10, max = 60)
     @Column(nullable = false)

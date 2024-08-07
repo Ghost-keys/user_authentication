@@ -39,15 +39,10 @@ public class AuthenticationService {
      */
     public AuthenticationResponse register(RegistrationRequest request) {
         var user = User.builder()
-                .name(request.getName())
-                .surname(request.getSurname())
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
                 .role(request.getRole())
                 .build();
-        System.out.println("HERE ARE THE TESTER STRINGS");
-        System.out.println(request.getName());
-        System.out.println(request.getSurname());
         var savedUser = repository.save(user);
         var jwtToken = jwtService.generateToken(user);
         var refreshToken = jwtService.generateRefreshToken(user);
