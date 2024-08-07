@@ -35,7 +35,7 @@ services:
 
   pgadmin:
     container_name: db_manager
-    image: dpage/pgadmin4:snapshot
+    image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: bonganialfred@live.co.za
       PGADMIN_DEFAULT_PASSWORD_FILE: /run/secrets/DB_PASS

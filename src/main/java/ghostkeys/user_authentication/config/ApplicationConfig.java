@@ -45,20 +45,20 @@ public class ApplicationConfig {
     }
 
 
-    /**
-     * Creates and configures a DaoAuthenticationProvider bean.
-     * This provider uses a UserDetailsService to retrieve user information
-     * and a PasswordEncoder to verify passwords.
-     *
-     * @return an AuthenticationProvider configured with user details service and password encoder.
-     */
-    @Bean
-    public AuthenticationProvider authenticationProvider() {
-        DaoAuthenticationProvider authProvide = new DaoAuthenticationProvider();
-        authProvide.setUserDetailsService(userDetailsService());
-        authProvide.setPasswordEncoder(passwordEncoder());
-        return authProvide;
-    }
+//    /**
+//     * Creates and configures a DaoAuthenticationProvider bean.
+//     * This provider uses a UserDetailsService to retrieve user information
+//     * and a PasswordEncoder to verify passwords.
+//     *
+//     * @return an AuthenticationProvider configured with user details service and password encoder.
+//     */
+//    @Bean
+//    public AuthenticationProvider authenticationProvider() {
+//        DaoAuthenticationProvider authProvide = new DaoAuthenticationProvider();
+//        authProvide.setUserDetailsService(userDetailsService());
+//        authProvide.setPasswordEncoder(passwordEncoder());
+//        return authProvide;
+//    }
 
 
     /**

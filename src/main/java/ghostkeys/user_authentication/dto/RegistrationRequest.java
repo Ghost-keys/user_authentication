@@ -20,6 +20,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class RegistrationRequest {
 
+    @NotBlank(message = "Name can not be blank")
+    private String name;
+
+    @NotBlank(message = "Surname can not be blank")
+    private String surname;
+
     @Column(unique = true)
     @NotBlank(message = "Email can not be blank")
     private String email;
