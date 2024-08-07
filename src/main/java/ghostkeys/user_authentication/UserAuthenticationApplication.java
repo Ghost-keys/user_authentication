@@ -11,4 +11,5 @@ public class UserAuthenticationApplication {
 		SpringApplication.run(UserAuthenticationApplication.class, args);
 	}
 
+
 }
