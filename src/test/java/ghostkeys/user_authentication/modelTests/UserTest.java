@@ -13,8 +13,6 @@ public class UserTest {
 
     private User user = User.builder()
             .id(1)
-            .name("Bongani")
-            .surname("Chimalizeni")
             .email("test@example.com")
             .password("testPassword")
             .role(UserRole.ADMIN)

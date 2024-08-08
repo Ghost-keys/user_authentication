@@ -20,11 +20,17 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class RegistrationRequest {
 
+    @NotBlank(message = "Name is mandatory")
+    private String name;
+
+    @NotBlank(message = "Surname is mandatory")
+    private String surname;
+
     @Column(unique = true)
-    @NotBlank(message = "Email can not be blank")
+    @NotBlank(message = "Email is mandatory")
     private String email;
 
-    @NotBlank(message = "Password can not be blank")
+    @NotBlank(message = "Password is mandatory")
     private String password;
 
     @Enumerated(EnumType.STRING)

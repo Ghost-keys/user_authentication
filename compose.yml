@@ -20,7 +20,7 @@ services:
 
   authentication_app:
     container_name: authentication_api
-    image: ghostkeys/authentication_api:latest
+    image: authentication_api
     secrets:
       - DB_URL
       - DB_USER
